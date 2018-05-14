@@ -44,8 +44,13 @@ public class MainActivity extends AppCompatActivity {
                 values.put("price", 10.1);
                 db.update("Book", values, "name=?", new String[]{"The Da Vinci Code"});
             }
-
                 break;
+
+            case R.id.delete_data_button:{
+                SQLiteDatabase db = databaseHelper.getWritableDatabase();
+                db.delete("Book", "pages > ?", new String[]{"480"});
+                break;
+            }
         }
     }
 }
