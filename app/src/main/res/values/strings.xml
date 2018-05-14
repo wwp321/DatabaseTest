@@ -4,4 +4,5 @@
     <string name="add_daba">Add Data</string>
     <string name="update_data">Update Data</string>
     <string name="delete_data">Delete Data</string>
+    <string name="query_data">Query Data</string>
 </resources>

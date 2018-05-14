@@ -65,4 +65,20 @@
         app:layout_constraintTop_toBottomOf="@+id/update_data_button"
         android:textAllCaps="false"
         android:onClick="onButtonClick"/>
+
+    <Button
+        android:id="@+id/query_data_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/query_data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delete_data_button"
+        android:textAllCaps="false"
+        android:onClick="onButtonClick"/>
 </android.support.constraint.ConstraintLayout>
