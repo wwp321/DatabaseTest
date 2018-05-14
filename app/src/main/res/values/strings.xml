@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DatabaseTest</string>
+    <string name="create_db">Create Database</string>
+</resources>
