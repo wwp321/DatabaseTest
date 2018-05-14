@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.create_db_button:
                 databaseHelper.getWritableDatabase();
                 break;
-            case R.id.add_daba_button:
+            case R.id.add_daba_button: {
                 SQLiteDatabase db = databaseHelper.getWritableDatabase();
                 ContentValues values = new ContentValues();
                 values.put("name", "The Da Vinci Code");
@@ -36,6 +36,15 @@ public class MainActivity extends AppCompatActivity {
                 values.put("pages", 510);
                 values.put("price", 19.95);
                 db.insert("Book", null, values);
+            }
+                break;
+            case R.id.update_data_button:{
+                SQLiteDatabase db = databaseHelper.getWritableDatabase();
+                ContentValues values = new ContentValues();
+                values.put("price", 10.1);
+                db.update("Book", values, "name=?", new String[]{"The Da Vinci Code"});
+            }
+
                 break;
         }
     }
